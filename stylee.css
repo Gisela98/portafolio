@@ -2,20 +2,34 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
     background-color: black;
     color: white;
 
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100%;
+    min-width: 100%;
+    display: block;
 }
 
 .profile {
     width: 100%;
     height: 300px;
     text-align: center;
-    background-image: url(/images/Group99.svg);
+    margin: 20px 0px;
 }
 
-.main {
+#mainheader {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 30px 5%;
+}
+
+.main footer {
     text-align: center;
     padding: 50px;
     height: auto;
@@ -53,10 +67,6 @@ p {
  
 }
 
-a{
-    text-decoration: none;
-}
-
 /*classes*/
 .container {
     margin: auto;
@@ -91,14 +101,12 @@ a{
 /*menu*/
 #navbar {
     color: white;
-    padding-top: 0px;
-    padding-bottom: 20px;
-    text-align: left;
-    float: right;
-    padding-top: 0px;
+    text-align: center;
     font-size: 1.5rem;
     width: 100%;
-    height: 130px;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 #navbar ul{
@@ -112,9 +120,8 @@ a{
    
 #navbar ul li a {
     display: inline-block;
-    padding: 20px;
+    padding: 0px 20px;
     text-align: center;
-    padding-top: 0%;
 }
 
 #navbar ul li a:hover {
@@ -208,40 +215,65 @@ h3{
     text-align: center;
 }
 
+.timeline {
+    display: block;
+    padding: 30px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 .timeline-row {
-    width: 300px;
-    height: 50px;
-    padding-left: 35%;
-    margin: 20px 0px;
-    vertical-align: top;
+    width: 100%;
+    height: auto;
+    margin: 30px 0px 10px 0px;
+    border-bottom: 2px solid white;
+    padding: 0px 30px;
 }
 
 .timeline-row-tag {
-    width: auto;
+    width: 40%;
     height: auto;
     display: inline-block;
-    margin-right: 70px;
 }
 
 .timeline-row-text {
-    width: auto;
+    width: 40%;
     height: auto;
     display: inline-block;
+    margin-bottom: 10px;
 }
 
-
+@media (max-width: 410px) {
+    .timeline-row-tag {
+        width: 50%;
+    }
+    .timeline-row-text {
+        width: 50%;
+    }
+    .slider-item {
+        width: 295px;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+}
 
 
 
 /*portafolio*/
+.slider-container{
+    text-align: center;
+    width: 100%;
+}
+
 .slider-item {
     transition: transform .2s; 
-    width: 357px;
+    width: 400px;
     height: 260px;
     z-index: 999;
     border: 1px solid gray;
-    margin-left: 60px;
-    margin-top: 60px;
+    margin: 30px 10px;
    }
     
 
@@ -256,10 +288,6 @@ h3{
     height: 70px;
     border-radius:40px;
     border:2px solid  white;
-}
-
-.h8 {
-   text-align: center;
 }
 
 .containercontacto {
@@ -286,34 +314,4 @@ h3{
 .containers {
     width: 30px;
     height: 30px;
-}
-
-
-
-/*.contacto {
-    text-align: center;
-    display: grid;
-    grid-template-areas:
-    "a a a a b b b b"
-    "a a a a b b b b";
-
-}
-.contacto-row-left-image1 {
-    grid-area: a;
- }
-
-.contacto-row-left-text2 {
-    grid-area:  ;
- }
-
- .contacto-row-right-image3 {
-    grid-area: b;
- }
-
- .contacto-row-right-text4 {
-    grid-area: ;
- }*/
-
-.h9 {
-    color: gray;
 }
