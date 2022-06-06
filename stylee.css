@@ -21,16 +21,21 @@ body {
     height: 300px;
     text-align: center;
     margin:20px 0px;
+    
 }
 
-#mainheader {
+
+p {
+    padding: 1rem;
+}
+/*#mainheader {
     display: flex;
     width: 100%;
     height: auto;
     padding: 30px 5%;
     
 
-}
+}*/
 
 .main footer {
     text-align: center;
@@ -53,6 +58,7 @@ html, body {
 h1, h2, h3 {
     font-size: 2.5rem;
     text-align: center;
+    padding: 2rem;
 }
 
 h4 {
@@ -102,7 +108,79 @@ p {
 }
 
 /*menu*/
-#navbar {
+/* NAVBAR */
+.hidden {
+    display: none;
+}
+
+nav {
+    text-align: right;
+    padding: 1rem 3rem;
+    background-color: black;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    position: absolute;
+    background-color: black;
+    left: 0;
+    right: 0;
+    top: 100%;
+    margin: 0;
+    z-index: 999;
+    padding: 1rem;
+}
+
+nav ul li {
+    padding: 0.5rem 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem 0;
+}
+
+nav button {
+    border: 0;
+    background-color: transparent;
+}
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #ul-nav li {
+        display: inline-block;
+        margin-left: 1rem;
+    }
+    #ul-nav {
+        display: block;
+        text-align: right;
+        background-color: transparent;
+        position: static;
+        padding: 0;
+    }
+    nav button{
+        display: none;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #ul-nav li {
+        margin-left: 3rem;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/*#nav {
     color: white;
     text-align: center;
     font-size: 1.5rem;
