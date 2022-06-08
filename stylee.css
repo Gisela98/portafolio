@@ -11,9 +11,9 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    min-height: 100%;
-    min-width: 100%;
-    display: block;
+  /*  min-height: 100%;
+    min-width: 100%;*/
+   /* display: block;*/
 }
 
 .profile {
@@ -55,16 +55,14 @@ body {
 
 /* vectores*/
 .float  {
-    position: absolute;
-    width: 110%;
+    position: relative;
+   /* width: 110%;*/
     background-image: url("./images/Group98.svg");
     background-repeat:no-repeat;
     background-position: center center;
-    height: 50%;
-  /* -webkit-background-size: cover !important;*/
-    background-size: 107%;
-   
-       
+    height: 23rem;
+  /*  webkit-background-size: cover !important;*/
+    background-size: 110rem;  
 }
 
 
@@ -163,7 +161,7 @@ p {
 /*classes*/
 .container {
     margin: auto;
-    max-width: 1300px;
+   /* max-width: 1300px;*/
     padding: 40px 20px;
 
 
@@ -171,8 +169,8 @@ p {
 
 .container3 {
     margin: auto;
-    max-width: 1300px;
-    margin-top: 28rem;
+ /*   max-width: 1300px;
+    margin-top: 28rem;*/
     
 }
 
