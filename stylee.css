@@ -30,19 +30,18 @@ body {
     background-repeat:no-repeat;
     background-position: center center;
     width: 100%;
-    height: 100%;
+    height: 102%;
     z-index: auto;
     position: absolute;
-   /* -webkit-backgro
-   und-size: cover !important;*/
+   -webkit-background-size: cover !important;
     
 }
 
-.gisel {
-    height: 250px;
-    width: 250px;
+.gisel  {
+    height: 300px;
+    width: 300px;
     object-fit: contain;
-    margin-top: 10%;
+    margin-top: 40%;
     border-radius: 50%;
    
 }
@@ -51,21 +50,24 @@ body {
 /* vectores*/
 .float  {
     position: absolute;
-    z-index: auto;
-    width: 100%;
+    width: 110%;
     background-image: url("./images/Group98.svg");
     background-repeat:no-repeat;
     background-position: center center;
-    width: 100%;
     height: 50%;
-   /* -webkit-background-size: cover !important;*/
-    background-size: 105%;
+  /* -webkit-background-size: cover !important;*/
+    background-size: 107%;
+   
        
 }
 
 
+
+
 .float2 {
     float: right;
+    position: absolute;
+    right: -110px !important;
 
 }
 
@@ -76,6 +78,9 @@ body {
 
 .float3 {
    float: left;
+   position: absolute;
+   left: -50px !important;
+
 
 }
 
@@ -232,8 +237,14 @@ nav button {
 
 #showcase-row {
     display: flex;
+    text-align: center;
    
 
+}
+span.showcase-row-img {
+      text-align: center;
+      width: 
+ 
 }
 
 /*kills*/
@@ -421,7 +432,13 @@ h3{
 
 @media (max-width: 454px) { 
     .gisel {
-        margin-top: 40%;
+        margin-top: 80%;
+}
+}
+
+@media (max-width: 360px) { 
+    . {
+        margin-top: 70%;
 }
 }
 
