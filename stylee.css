@@ -21,6 +21,7 @@ body {
     height: 34rem;
     text-align: center;
     margin:20px 0px;
+    position: relative;
 }
 
 .profile1 {
@@ -30,7 +31,11 @@ body {
     background-position: center center;
     width: 100%;
     height: 100%;
-
+    z-index: auto;
+    position: absolute;
+   /* -webkit-backgro
+   und-size: cover !important;*/
+    
 }
 
 .gisel {
@@ -46,57 +51,38 @@ body {
 /* vectores*/
 .float  {
     position: absolute;
-    z-index: 1;
+    z-index: auto;
     width: 100%;
     background-image: url("./images/Group98.svg");
-    background-size: 87rem;
     background-repeat:no-repeat;
     background-position: center center;
     width: 100%;
-    height: 60%;
-    
-  
-
-   
+    height: 50%;
+   /* -webkit-background-size: cover !important;*/
+    background-size: 105%;
+       
 }
+
 
 .float2 {
-    position: absolute;
-    justify-content: right;
-}
+    float: right;
 
-.float3 {
-    position: absolute; 
-    justify-content: left; 
-
-}
-
-
-/*.float2 {
-    justify-content: center;
-    position: absolute;
-    z-index: 1;
-    top: 26%;
-}
-
-.float3 {
-    justify-content: center;
-    position: absolute;
-    z-index: 1;
-    top: 59%;
-}
-
-.float img {
-    width: 100%;
 }
 
 .float2 img {
-    width: 70%;
+    max-width: 70%;
+    max-height: 70% ;
+}
+
+.float3 {
+   float: left;
+
 }
 
 .float3 img {
-    width: 70%;
-}*/
+    max-width: 70%;
+    max-height: 70% ;
+}
 
 
 p {
@@ -415,15 +401,21 @@ h3{
 /*media queries*/
 
 /* // Small devices (landscape phones, 576px and up) */
-@media (max-width: 500px) { 
+@media (max-width: 460px) { 
     .gisel {
-        margin-top: 25%;
+        margin-top: 40%;
 }
 }
 
-@media (max-width: 844px) { 
+@media (max-width: 882px) { 
     .gisel {
         margin-top: 20%;
+}
+}
+
+@media (max-width: 988px) { 
+    .gisel {
+        margin-top: 18%;
 }
 }
 
@@ -456,6 +448,12 @@ h3{
 @media (min-width: 992px) {
     #ul-nav li {
         margin-left: 3rem;
+    }
+
+}
+ @media (max-width: 9922px) { 
+        .gisel {
+            margin-top: 13%;
     }
 }
 
